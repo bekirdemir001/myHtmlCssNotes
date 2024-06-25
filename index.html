@@ -1,88 +1,232 @@
-<!--Specifies the Document Type-->
 <!DOCTYPE html>
-
-<!--It indicates the language of the HTML page and is the opening tag. It consists of Head and Body tags.-->
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title>: Defines the title of the document, shown in the browser's title bar or tab.-->
+    <title>My HTML-CSS Notes</title>
+</head>
+<body>
+    <!--Content and Structure Tags-->
 
-    <!--It is used to define the metadata of an HTML document and includes the document's title, character set, style sheets, scripts, and other meta information. This information determines how the page will be displayed and rendered by browsers.-->
-    <head>
-        <!--Provides metadata about the page (e.g. character set, author, keywords).-->
-        <meta charset="UTF-8">
-        <meta name="description" content="This is my web page">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="Bekir Demir">
+        <!--<h1> - <h6>: Heading tags, <h1> is the largest, <h6> is the smallest. These are block elements.-->
+        <h1>Header1</h1>
+        <h2>Header2</h2>
+        <h3>Header3</h3>
+        <h4>Header4</h4>
+        <h5>Header5</h5>
+        <h6>Header6</h6>
 
-        <!--Provides links to external resources (e.g. CSS files, favicon).-->
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="favicon.ico">
+        <!--<p>: Paragraph tag. It is a block element.-->
+        <p>HTML (HyperText Markup Language) is the standard language used to create web pages. It consists of a series of elements that define the structure and content of a webpage.</p>
 
-        <!--Contains internal CSS styles.-->
-        <style>
-            body {
-                background-color: lightblue;
-            }
-        </style>
+        <!--<a>: Anchor tag, used for hyperlinks. target="_blank" load the URL into a new browsing content. This is usually a tab. <a> tag feature can be added to images. It also an inline element.-->
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.amazon.com" target="_blank">Go to Amazon</a>
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="/assets/img/youtube_img.png" alt="YouTube Image Not Found" width="100">
+        </a>
 
-        <!--Contains internal or external JavaScript code-->
-        <script src="script.js"></script>
+        <!--<img>: Embeds an image. It is a self-closing tag.-->
+        <img src="/assets/img/html_img.png" alt="HTML Image Not Found">  
 
-        <!--Determines the title of the web page and is displayed in the browser tab.-->
-        <title>HTML-CSS Lessons</title> <!--Dokuman Tipini belirtir.-->
-    </head>
+        <!--<ul>: Unordered list.-->
+        <p>Beverages</p>
+        <ul>
+            <li>Espresso</li>
+            <li>Coffee Macchiato</li>
+            <li>Americano</li>
+            <li>Cappuccino</li>
+        </ul>
 
-    <!--Everything that appears on the website is included here-->
-    <body>
-        <!--
-                Most Common HTML Tags
+        <!--<ol>: Ordered list. type="1|a|A|i|I" attribute specifies the kind of marker to use in the list-->
+        <p>Breakfast</p>
+        <ol type="a">
+            <li>Cheese</li>
+            <li>Olive</li>
+            <li>Butter</li>
+            <li>Bread</li>
+        </ol> 
 
-            1. Basic Structure Tags
+        <!--<li>: List item.-->
+        <p>HTML Course Contents</p>
+        <ol type="I">
+            <li>Basic Structure of an HTML Document</li>
+            <li>Key Components</li>
+            <li>Common Tags</li>
+            <li>Attributes</li>
+            <li>Summary</li>
+        </ol> 
 
-                a. <!DOCTYPE html>: Declares the document type as HTML5.
-                b. <html>: The root element of an HTML document.
-                c. <head>: Contains meta-information, styles, and scripts.
-                d. <body>: Contains the content of the web page.
+        <!--<div>: Division or section, used as a container for HTML elements.-->
+        <div style="background-color: aqua; height: 200px;">
+            <h1>Welcome to My Website</h1>
+            <p>Courses</p>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Boostrap</li>
+                <li>JQuery</li>
+            </ol>
+        </div> 
 
-            2. Content and Structure Tags
+        <!--<span>: Inline container, used to group inline elements for styling.-->
+        <div style="background-color:blueviolet; height: 200px;">
+            <h1>Welcome to My Website</h1>
+            <p>Courses</p>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li><span style="background-color: beige; font-size: 20px">JavaScript</span></li>
+                <li>Boostrap</li>
+                <li>JQuery</li>
+            </ol>
+        </div> 
+
+    <!--Form Tags-->
             
-                a. <h1> - <h6>: Heading tags, <h1> is the largest, <h6> is the smallest.
-                b. <p>: Paragraph tag.
-                c. <a>: Anchor tag, used for hyperlinks.
-                d. <img>: Embeds an image.
-                e. <ul>: Unordered list.
-                f. <ol>: Ordered list.
-                g. <li>: List item.
-                h. <div>: Division or section, used as a container for HTML elements.
-                i. <span>: Inline container, used to group inline elements for styling.
+        <!--<form>: Defines an HTML form for user input.-->
+        <!--<input>: Defines an input control.-->
+        <!--<label>: Defines a label for an input element.-->
+        <!--<button>: Defines a clickable button.-->
+        <!--<textarea>: Defines a multi-line text input control.-->
 
-            3. Form Tags
+        <form action="/submit-form" method="post">
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="email">E-Mail: </label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" id="password" required>
+            </div>
+            <div>
+                <label for="message">Message: </label>
+                <textarea id="message" rows="10" cols="20" required></textarea>
+            </div>
+            <div>
+                <button id="submit">Submit</button>
+                <!--<input type="submit" value="Submit">-->
+            </div>
+            <div>
+                <input type="reset" value="Reset">
+            </div>     
+        </form>
 
-                a. <form>: Defines an HTML form for user input.
-                b. <input>: Defines an input control.
-                c. <label>: Defines a label for an input element.
-                d. <button>: Defines a clickable button.
-                e. <textarea>: Defines a multi-line text input control.
-            
-            4. Table Tags
-                
-                a. <table>: Defines a table.
-                b. <tr>: Defines a table row.
-                c. <td>: Defines a table cell.
-                d. <th>: Defines a table header cell.
-                
-            5. Media Tags
+    <!--Table Tags-->
+        
+        <!--<table>: Defines a table.-->
+        <!--<tr>: Defines a table row.-->
+        <!--<td>: Defines a table cell.-->
+        <!--<th>: Defines a table header cell.-->
 
-                a. <video>: Embeds a video.
-                b. <audio>: Embeds an audio file.
-                
-            6. Other Common Tags
-            
-                a. <br>: Inserts a line break.
-                b. <hr>: Inserts a horizontal rule (line).
-                c. <strong>: Defines important text (bold).
-                d. <em>: Defines emphasized text (italic).
-                e. <title>: Defines the title of the document, shown in the browser's title bar or tab.
-            -->
+        <!--border="1" attribute adds a frame to the table-->
+        <!--colspan="3" attribute combines columns.-->
+        <!--rowspan="3" attribute combines rows.-->
 
+        <table border="1">
+            <tr>
+                <th colspan="10">European Championships - Group A 2024</th>
+            </tr>
+            <tr>
+                <th>#</th>
+                <th>Team</th>
+                <th>Pl</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>F</th>
+                <th>A</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Germany</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>8</td>
+                <td>2</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Switzerland</td>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+                <td>5</td>
+                <td>3</td>
+                <td>2</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hungary</td>
+                <td>3</td>
+                <td>1</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2</td>
+                <td>5</td>
+                <td>-3</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Scotland</td>
+                <td>3</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                <td>7</td>
+                <td>-5</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+    <!--Media Tags-->
+
+        <!--<video>: Embeds a video.-->
+        <div>
+            <h3>Best Goals of The Year 2024</h3>
+            <video src="/assets/videos/bestGoalsOfTheYear2024.mp4" controls></video>
+        </div>
+        
+        <!--<audio>: Embeds an audio file.-->
+        <div>
+            <h3>Learn English With Podcast</h3>
+            <audio src="/assets/audios/englishPodcast.mp3" controls></audio>
+        </div>
+
+    <!--Other Common Tags-->
+        
+        <!--<br>: Inserts a line break.-->
+        <p>HTML Tags</p>
+        <br>
+        <p>An HTML tag is a code element that defines the structure and content of web pages. Tags are enclosed in angle brackets and usually come in pairs: an opening tag and a closing tag. The opening tag indicates the start of an element, and the closing tag indicates the end.</p>
+
+        <!--<hr>: Inserts a horizontal rule (line).-->
+        <p>Attributes provide additional information about an element. Attributes are included in the opening tag and are usually written as name-value pairs. The value is placed within double quotes " ".</p>
+        <hr>
+
+        <!--<strong>: Defines important text (bold). It is an inline element.-->
+        <strong>HTML uses elements and attributes to define the structure and content of web pages. Key components include headings, paragraphs, links, images, lists, tables, and forms. HTML documents have a basic structure consisting of !DOCTYPE html, html, head, and body elements.</strong>
+
+        <!--<em>: Defines emphasized text (italic). It is an inline element.-->
+        <em>HTML (HyperText Markup Language) is the standard language used to create web pages. It consists of a series of elements that define the structure and content of a webpage.</em>
+
+        <!--<title>: Defines the title of the document, shown in the browser's title bar or tab.-->
+        <!--This tag is located inside of <head> tag.-->
 </body>
-
 </html>

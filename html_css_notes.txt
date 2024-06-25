@@ -1,0 +1,169 @@
+
+    HTML
+
+HTML (HyperText Markup Language) is the standard language used to create web pages. It consists of a series of elements that define the structure and content of a webpage. Here's a brief overview:
+
+1. Basic Structure of an HTML Document
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Page Title</title>
+    </head>
+    <body>
+        <h1>Hello, World!</h1>
+        <p>This is a paragraph.</p>
+    </body>
+    </html>
+
+2. Key Components
+
+    a. Document Type Declaration (`<!DOCTYPE html>`):
+    - Declares the document as HTML5.
+
+    b. HTML Element (`<html>`):
+    - The root element of the document.
+
+    c. Head Element (`<head>`):
+    - Contains meta-information, such as the document's title and character set.
+
+    d. Body Element (`<body>`):
+    - Contains the content of the document, like text, images, links, etc.
+
+3. Common Tags
+
+An HTML tag is a code element that defines the structure and content of web pages. Tags are enclosed in angle brackets < > and usually come in pairs: an opening tag and a closing tag. The opening tag indicates the start of an element, and the closing tag indicates the end.
+
+    - Basic Structure Tags
+
+        a. <!DOCTYPE html>: Declares the document type as HTML5.
+        b. <html>: The root element of an HTML document.
+        c. <head>: Contains meta-information, styles, and scripts.
+        d. <body>: Contains the content of the web page.
+
+    - Content and Structure Tags
+            
+        a. <h1> - <h6>: Heading tags, <h1> is the largest, <h6> is the smallest.
+        b. <p>: Paragraph tag.
+        c. <a>: Anchor tag, used for hyperlinks.
+        d. <img>: Embeds an image.
+        e. <ul>: Unordered list.
+        f. <ol>: Ordered list.
+        g. <li>: List item.
+        h. <div>: Division or section, used as a container for HTML elements.
+        i. <span>: Inline container, used to group inline elements for styling.
+
+    - Form Tags
+
+        a. <form>: Defines an HTML form for user input.
+        b. <input>: Defines an input control.
+        c. <label>: Defines a label for an input element.
+        d. <button>: Defines a clickable button.
+        e. <textarea>: Defines a multi-line text input control.
+            
+    - Table Tags
+                
+        a. <table>: Defines a table.
+        b. <tr>: Defines a table row.
+        c. <td>: Defines a table cell.
+        d. <th>: Defines a table header cell.
+                
+    - Media Tags
+
+        a. <video>: Embeds a video.
+        b. <audio>: Embeds an audio file.
+                
+    - Other Common Tags
+            
+        a. <br>: Inserts a line break.
+        b. <hr>: Inserts a horizontal rule (line).
+        c. <strong>: Defines important text (bold).
+        d. <em>: Defines emphasized text (italic).
+        e. <title>: Defines the title of the document, shown in the browser's title bar or tab.
+
+4. Attributes
+
+Attributes provide additional information about an element. Attributes are included in the opening tag and are usually written as name-value pairs. The value is placed within double quotes " ".
+
+    Examples of HTML Attributes:
+    1. Attribute in an Image Tag:
+        <img src="image.jpg" alt="Description of image">
+        src is an attribute that specifies the path to the image.
+        alt is an attribute that provides alternative text for the image.
+
+    2. Attribute in a Link Tag:
+        <a href="https://www.example.com">Visit Example</a>
+        href is an attribute that specifies the URL of the link.
+
+    3. Attribute in a Form Tag:
+        <input type="text" name="username" placeholder="Enter your username">
+        type is an attribute that specifies the type of input.
+        name is an attribute that specifies the name of the input field.
+        placeholder is an attribute that provides a hint to the user about what to enter.
+
+5. Summary
+
+HTML uses elements and attributes to define the structure and content of web pages. Key components include headings, paragraphs, links, images, lists, tables, and forms. HTML documents have a basic structure consisting of `<!DOCTYPE html>`, `<html>`, `<head>`, and `<body>` elements.
+
+=============================================================
+
+    Inline and Block elements
+
+In HTML, elements can be categorized into two main types: block-level elements and inline elements. Understanding the difference between them is essential for structuring web pages effectively.
+
+1. Block-Level Elements
+
+Block-level elements start on a new line and take up the full width available (stretch out to the left and right as far as they can). These elements create larger structures on the page, such as sections, paragraphs, and dividers.
+
+    a. Characteristics of Block-Level Elements:
+
+    Always start on a new line.
+    Take up the full width available by default.
+    Can contain other block-level elements and inline elements.
+
+    b. Common Block-Level Elements:
+
+    <div>: A generic container for flow content.
+    <p>: A paragraph.
+    <h1> to <h6>: Headings of different levels.
+    <ul>: Unordered list.
+    <ol>: Ordered list.
+    <li>: List item.
+    <header>: A header for a document or section.
+    <footer>: A footer for a document or section.
+    <section>: A section in a document.
+    <article>: An article.
+    <aside>: Content aside from the content it is placed in.
+    <nav>: Navigation links.
+    <main>: The main content of the document.
+    <form>: A form for user input.
+
+2. Inline Elements
+
+Inline elements do not start on a new line. They take up only as much width as necessary and flow within the content, alongside other inline elements.
+
+    a. Characteristics of Inline Elements:
+
+    Do not start on a new line.
+    Only take up as much width as necessary.
+    Cannot contain block-level elements, but can contain other inline elements.
+
+    b. Common Inline Elements:
+
+    <span>: A generic container for phrasing content.
+    <a>: A hyperlink.
+    <img>: An image.
+    <strong>: Strong importance, typically rendered as bold.
+    <em>: Emphasis, typically rendered as italic.
+    <b>: Bold text.
+    <i>: Italic text.
+    <u>: Underlined text.
+    <code>: A piece of computer code.
+    <br>: A line break.
+    <input>: An input field within a form.
+    <label>: A label for an input element.
+
+3. Combining Block and Inline Elements
+
+You can mix block-level and inline elements to create rich, well-structured web pages. For example, a paragraph (<p>, block-level) can contain text with emphasis (<em>, inline), strong importance (<strong>, inline), and links (<a>, inline).
