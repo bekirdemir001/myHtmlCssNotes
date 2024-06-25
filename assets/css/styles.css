@@ -1,0 +1,106 @@
+
+/* Key Features of CSS */
+
+    /* 1. Selectors */
+
+        /* a. Element */
+        h1{
+            text-align: center;
+        }
+        
+        /* b. Class */
+        .htmlDefinition{
+            font-size: 25px;
+            color: brown;
+        }
+
+        /* c. Id */
+        #contact{
+            background-color: aqua;
+        }
+
+        /* d. Element.Class */
+        tr.tableHeading{
+            font-weight: bold;
+        }
+
+    /* 2. Properties and Values */
+    table, tr, td, th{
+        border: 1px solid salmon;
+        border-collapse: collapse;
+    }
+
+    #standings tr:first-child{
+        background-color: green;
+        color: white;
+    }
+
+    #standings tr:nth-child(2){
+        background-color: lightgreen;
+        color: blueviolet;
+    }
+
+    #standings tr:nth-child(3){
+        background-color: grey;
+        color: wheat;
+    }
+
+    #standings tr:nth-child(4){
+        background-color: grey;
+        color: wheat;
+    }
+
+    /* 3. Box Model */
+    .list2{
+        width: 300px;
+        height: 150px;
+            /* thickness, type, color*/
+        border: 7px solid red;
+        border-radius: 7px;
+        margin: 30px;
+        padding: 15px;
+    }
+
+    /* 4. Layout */
+    #contact{
+        width: 300px;
+        height: 350px;
+        margin: 30px;
+        display: inline-block;
+    }
+    table{
+        display: inline-block;
+    }
+
+    /* 5. Typography */
+    .htmlTagDefinition{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.9;
+    }
+
+
+    /* 6. Color and Backgrounds */
+    .list1{
+        background-image: url("/assets/img/backroundImage.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+
+    /*<a> Tags*/
+    a:link{
+        color: brown;
+        text-decoration: none;
+    }
+    a:hover{
+        color: orange;
+    }
+    a:active{
+        color:violet;
+        background-color: black;
+    }
+    a:visited{
+        color: red;
+    }

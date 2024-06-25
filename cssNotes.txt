@@ -1,0 +1,55 @@
+
+    CSS
+
+CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation of web pages, including layout, colors, fonts, and overall visual styling. It separates content (HTML) from design, enhancing the maintainability and reusability of code.
+
+1. Key Features of CSS:
+
+    a. Selectors: Define which HTML elements the styles apply to.
+    - Examples: `element`, `.class`, `#id`, `element.class`.
+
+    b. Properties and Values: Specify what aspect of the selected elements to style.
+    - Examples: `color: blue;`, `font-size: 16px;`, `margin: 10px;`.
+
+    c. Box Model: Describes the rectangular boxes generated for elements in the document tree and consists of margins, borders, padding, and the actual content.
+    - Example: `width`, `height`, `padding`, `border`, `margin`.
+
+    d. Layout: Controls the positioning and flow of elements.
+    - Examples: `display`, `position`, `float`, `flex`, `grid`.
+
+    e. Typography: Manages text appearance.
+    - Examples: `font-family`, `font-size`, `font-weight`, `line-height`.
+
+    f. Color and Backgrounds: Styles the color of text and backgrounds.
+    - Examples: `color`, `background-color`, `background-image`.
+
+    g. Responsive Design: Adapts the layout to different screen sizes using media queries.
+    - Example: `@media (max-width: 600px) { ... }`.
+
+2. Methods to Include CSS:
+
+    a. Inline CSS: Styles added directly to HTML elements using the `style` attribute.
+    <p style="color: red;">This is a red paragraph.</p>
+
+    b. Internal CSS: Styles written inside a `<style>` tag in the HTML document's `<head>`.
+    <head>
+        <style>
+            p {
+                color: red;
+            }
+        </style>
+    </head>
+
+    3. External CSS: Styles written in a separate `.css` file linked to the HTML document.
+    <head>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+    </head>
+
+3. Summary:
+
+    - Purpose: CSS styles and formats the HTML elements on a web page.
+    - Structure: Consists of selectors and declarations (properties and values).
+    - Box Model: Key concept involving content, padding, border, and margin.
+    - Inclusion: Can be added inline, internally, or externally, with external being the most efficient for larger projects.
+
+    CSS enhances the visual appeal of web pages, making them more user-friendly and aesthetically pleasing.

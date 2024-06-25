@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--External CSS: Styles written in a separate `.css` file linked to the HTML document.-->
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <!--<title>: Defines the title of the document, shown in the browser's title bar or tab.-->
     <title>My HTML-CSS Notes</title>
 </head>
@@ -10,15 +12,15 @@
     <!--Content and Structure Tags-->
 
         <!--<h1> - <h6>: Heading tags, <h1> is the largest, <h6> is the smallest. These are block elements.-->
-        <h1>Header1</h1>
-        <h2>Header2</h2>
-        <h3>Header3</h3>
-        <h4>Header4</h4>
-        <h5>Header5</h5>
-        <h6>Header6</h6>
+        <h1>Heading1</h1>
+        <h2>Heading2</h2>
+        <h3>Heading3</h3>
+        <h4>Heading4</h4>
+        <h5>Heading5</h5>
+        <h6>Heading6</h6>
 
         <!--<p>: Paragraph tag. It is a block element.-->
-        <p>HTML (HyperText Markup Language) is the standard language used to create web pages. It consists of a series of elements that define the structure and content of a webpage.</p>
+        <p class="htmlDefinition">HTML (HyperText Markup Language) is the standard language used to create web pages. It consists of a series of elements that define the structure and content of a webpage.</p>
 
         <!--<a>: Anchor tag, used for hyperlinks. target="_blank" load the URL into a new browsing content. This is usually a tab. <a> tag feature can be added to images. It also an inline element.-->
         <a href="https://www.google.com">Go to Google</a>
@@ -31,32 +33,38 @@
         <img src="/assets/img/html_img.png" alt="HTML Image Not Found">  
 
         <!--<ul>: Unordered list.-->
-        <p>Beverages</p>
-        <ul>
-            <li>Espresso</li>
-            <li>Coffee Macchiato</li>
-            <li>Americano</li>
-            <li>Cappuccino</li>
-        </ul>
-
+        <div class="list1">
+            <p>Beverages</p>
+            <ul>
+                <li>Espresso</li>
+                <li>Coffee Macchiato</li>
+                <li>Americano</li>
+                <li>Cappuccino</li>
+            </ul>
+        </div>
+        
         <!--<ol>: Ordered list. type="1|a|A|i|I" attribute specifies the kind of marker to use in the list-->
-        <p>Breakfast</p>
-        <ol type="a">
-            <li>Cheese</li>
-            <li>Olive</li>
-            <li>Butter</li>
-            <li>Bread</li>
-        </ol> 
+        <div class="list2">
+            <p>Breakfast</p>
+            <ol type="a">
+                <li>Cheese</li>
+                <li>Olive</li>
+                <li>Butter</li>
+                <li>Bread</li>
+            </ol> 
+        </div>
 
         <!--<li>: List item.-->
-        <p>HTML Course Contents</p>
-        <ol type="I">
-            <li>Basic Structure of an HTML Document</li>
-            <li>Key Components</li>
-            <li>Common Tags</li>
-            <li>Attributes</li>
-            <li>Summary</li>
-        </ol> 
+        <div class="list3">
+            <p>HTML Course Contents</p>
+            <ol type="I">
+                <li>Basic Structure of an HTML Document</li>
+                <li>Key Components</li>
+                <li>Common Tags</li>
+                <li>Attributes</li>
+                <li>Summary</li>
+            </ol>
+        </div>
 
         <!--<div>: Division or section, used as a container for HTML elements.-->
         <div style="background-color: aqua; height: 200px;">
@@ -92,31 +100,34 @@
         <!--<button>: Defines a clickable button.-->
         <!--<textarea>: Defines a multi-line text input control.-->
 
-        <form action="/submit-form" method="post">
-            <div>
-                <label for="name">Name: </label>
-                <input type="text" id="name" required>
-            </div>
-            <div>
-                <label for="email">E-Mail: </label>
-                <input type="email" id="email" required>
-            </div>
-            <div>
-                <label for="password">Password: </label>
-                <input type="password" id="password" required>
-            </div>
-            <div>
-                <label for="message">Message: </label>
-                <textarea id="message" rows="10" cols="20" required></textarea>
-            </div>
-            <div>
-                <button id="submit">Submit</button>
-                <!--<input type="submit" value="Submit">-->
-            </div>
-            <div>
-                <input type="reset" value="Reset">
-            </div>     
-        </form>
+        <div id="contact">
+            <h3>Contact</h3>
+            <form action="/submit-form" method="post">
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="email">E-Mail: </label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" required>
+                </div>
+                <div>
+                    <label for="message">Message: </label>
+                    <textarea id="message" rows="10" cols="20" required></textarea>
+                </div>
+                <div>
+                    <button id="submit">Submit</button>
+                    <!--<input type="submit" value="Submit">-->
+                </div>
+                <div>
+                    <input type="reset" value="Reset">
+                </div>     
+            </form>
+        </div>
 
     <!--Table Tags-->
         
@@ -129,7 +140,7 @@
         <!--colspan="3" attribute combines columns.-->
         <!--rowspan="3" attribute combines rows.-->
 
-        <table border="1">
+        <table id="standings">
             <tr>
                 <th colspan="10">European Championships - Group A 2024</th>
             </tr>
@@ -145,7 +156,7 @@
                 <th>GD</th>
                 <th>Pts</th>
             </tr>
-            <tr>
+            <tr class="tableHeading">
                 <td>1</td>
                 <td>Germany</td>
                 <td>3</td>
@@ -157,7 +168,7 @@
                 <td>6</td>
                 <td>7</td>
             </tr>
-            <tr>
+            <tr class="tableHeading">
                 <td>2</td>
                 <td>Switzerland</td>
                 <td>3</td>
@@ -214,7 +225,7 @@
         <!--<br>: Inserts a line break.-->
         <p>HTML Tags</p>
         <br>
-        <p>An HTML tag is a code element that defines the structure and content of web pages. Tags are enclosed in angle brackets and usually come in pairs: an opening tag and a closing tag. The opening tag indicates the start of an element, and the closing tag indicates the end.</p>
+        <p class="htmlTagDefinition">An HTML tag is a code element that defines the structure and content of web pages. Tags are enclosed in angle brackets and usually come in pairs: an opening tag and a closing tag. The opening tag indicates the start of an element, and the closing tag indicates the end.</p>
 
         <!--<hr>: Inserts a horizontal rule (line).-->
         <p>Attributes provide additional information about an element. Attributes are included in the opening tag and are usually written as name-value pairs. The value is placed within double quotes " ".</p>
